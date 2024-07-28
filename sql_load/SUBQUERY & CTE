@@ -1,0 +1,89 @@
+-- Subquery
+/*SELECT *
+FROM (
+    SELECT *
+    FROm job_postings_fact
+    WHERE EXTRACT(MONTH FROM job_posted_date) = 1
+) AS january_jobs;
+*/
+
+
+SELECT 
+    company_id,
+    name AS company_name
+FROM 
+    company_dim
+WHERE
+    company_id IN (
+        SELECT 
+            company_id
+        FROM 
+            job_postings_fact
+        WHERE 
+            job_no_degree_mention = TRUE
+        ORDER BY 
+            company_id
+)
+
+--Common Table Expression (CTE)
+/*WITH january_jobs AS (
+    SELECT *
+    FROM job_postings_fact
+    WHERE EXTRACT(MONTH FROM job_posted_date) = 1
+)
+
+SELECT *
+FROM january_jobs
+*/
+
+/*
+WITH company_job_count AS(
+SELECT
+    company_id,
+    COUNT(*) AS total_jobs
+FROM 
+    job_postings_fact
+GROUP BY 
+    company_id
+)
+
+SELECT
+    cd.name AS company_name,
+    cjc.total_jobs
+FROM 
+    company_dim cd
+LEFT JOIN company_job_count cjc
+    ON cd.company_id = cjc.company_id
+ORDER BY 
+    total_jobs DESC
+*/
+
+
+-- Problem 7 (CTE)
+
+WITH remote_job_skills AS (
+SELECT 
+    sjd.skill_id,
+    COUNT(*) AS skill_count
+FROM 
+    skills_job_dim AS sjd
+INNER JOIN job_postings_fact AS jpf
+    ON sjd.job_id = jpf.job_id
+WHERE
+    jpf.job_work_from_home = True AND
+    jpf.job_title_Short = 'Data Analyst'
+GROUP BY
+    sjd.skill_id
+)
+
+SELECT 
+    sd.skill_id,
+    sd.skills AS skill_name,
+    rjs.skill_count
+
+FROM remote_job_skills rjs
+INNER JOIN skills_dim AS sd
+    ON rjs.skill_id = sd.skill_id
+ORDER BY 
+    skill_count DESC
+LIMIT 5
