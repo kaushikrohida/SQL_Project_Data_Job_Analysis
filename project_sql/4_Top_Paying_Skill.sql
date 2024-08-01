@@ -1,5 +1,5 @@
 SELECT
-    skills,
+    sd.skills,
     ROUND(AVG(salary_year_avg), 0) AS avg_salsary
 FROM job_postings_fact jpf
 INNER JOIN skills_job_dim sjd
