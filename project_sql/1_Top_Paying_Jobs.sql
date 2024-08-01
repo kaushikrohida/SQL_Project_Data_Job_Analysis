@@ -1,5 +1,3 @@
--- delete this later
-
 SELECT
     job_id,
     job_title,
