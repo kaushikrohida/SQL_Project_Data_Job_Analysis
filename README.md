@@ -20,6 +20,7 @@ For my deep dive into the data analyst job market, I harnessed the power of seve
 - **SQL:** The backbone of my analysis, enabling me to query databases and unearth critical insights.
 
 - **PostgreSQL:** The chosen database management system, ideal for handling job posting data.
+
 - **Visual Studio Code:** My go-to tool for database management and executing SQL queries.
 
 - **Git & GitHub:** Essential for version control and sharing my SQL scripts and analysis, facilitating collaboration and project tracking.
@@ -54,6 +55,7 @@ ORDER BY
 LIMIT 10
 ```
 Here's the breakdown of the top data analyst jobs in 2023:
+
 - **Wide Salary Range:** Top 10 paying data analyst roles span from $184,000 to $650,000, indicating significant salary potential in the field.
 
 - **Diverse Employers:** Companies like SmartAsset, Meta, and AT&T are among those offering high salaries, showing a broad interest across different industries.
@@ -235,11 +237,11 @@ Here's the data formatted as a table:
 
 Here's a breakdown of the most optimal skills for Data Analysts in 2023:
 
-- **High-Demand for Data and Programming Languages:** **Python** has the highest demand count (236) with an average salary of $101,397, showing its significance in the data analyst field. **R** also has a high demand count (148) with an average salary of $100,499, indicating its value for statistical analysis and data visualization. **Tableau** (230 demand count, $99,288 average salary) is a critical skill for data visualization.
+- **High-Demand for Data and Programming Languages:** Python has the highest demand count (236) with an average salary of $101,397, showing its significance in the data analyst field. R also has a high demand count (148) with an average salary of $100,499, indicating its value for statistical analysis and data visualization. Tableau (230 demand count, $99,288 average salary) is a critical skill for data visualization.
 
-- **Data Warehousing and Cloud Platform:** **Snowflake** (37 demand count, $112,948 average salary) and **Oracle** (37 demand count, $104,534 average salary) are highly demanded, highlighting the importance of data warehousing skills. **Cloud** platforms like **Azure** (34 demand count, $111,225 average salary) and **AWS** (32 demand count, $108,317 average salary) are essential for modern data infrastructure and analysis.
+- **Data Warehousing and Cloud Platform:** Snowflake (37 demand count, $112,948 average salary) and Oracle (37 demand count, $104,534 average salary) are highly demanded, highlighting the importance of data warehousing skills. Cloud platforms like Azure (34 demand count, $111,225 average salary) and AWS (32 demand count, $108,317 average salary) are essential for modern data infrastructure and analysis.
 
-- **Specialized Tools and Languages:** • **Go** (27 demand count, $115,320 average salary) and **Java** (17 demand count, $106,906 average salary) are important for backend development and data processing. Tools like **Confluence** (11 demand count, $114,210 average salary) and **Jira** (20 demand count, $104,918 average salary) are valuable for project management and collaboration. **Looker** (49 demand count, $103,795 average salary) is significant for business intelligence and data analytics. 
+- **Specialized Tools and Languages:** • Go (27 demand count, $115,320 average salary) and Java (17 demand count, $106,906 average salary) are important for backend development and data processing. Tools like Confluence (11 demand count, $114,210 average salary) and Jira (20 demand count, $104,918 average salary) are valuable for project management and collaboration. Looker (49 demand count, $103,795 average salary) is significant for business intelligence and data analytics. 
 
 # What I Learned
 Throught this adventure, I've turbocharged my SQL toolkit with some serious firepower:
@@ -259,6 +261,6 @@ Throught this adventure, I've turbocharged my SQL toolkit with some serious fire
 4. **Skills with Higher Salaries:** Specialized skills, such as SVN and Solidity, are associated with the highest average salaries, indicating a premium on niche expertise.
 5. **Optimal Skills for Job Market Value:** SQL leads in demand and offers for a high average salary, positioning it as one of the most optimal skills for data analysts to learn to maximize their market value.
 
-### Closing THoughts
+### Closing Thoughts
 
 This project not only enhanced my SQL skills but also provided valuable insights into the data analyst job market. The findings serve as a guide for prioritizing skill development and job search efforts. Aspiring data analysts can better position themselves in a competitive job market by focusing on high-demand, high-salary skills. This exploration underscores the importance of continuous learning and adaptation to emerging trends in the field of data analytics.
